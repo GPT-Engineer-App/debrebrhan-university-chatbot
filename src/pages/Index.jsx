@@ -11,7 +11,7 @@ const Index = () => {
   // Username: student
 
   const handleLogin = () => {
-    if (username === "student" && password === "dbu2023") {
+    if (username === "goitom" && password === "12345gg") {
       setIsLoggedIn(true);
       toast({
         title: "Login Successful",
