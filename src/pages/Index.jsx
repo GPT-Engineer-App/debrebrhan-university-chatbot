@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Button, Container, Flex, Heading, Input, Text, VStack, useToast } from "@chakra-ui/react";
+import { Box, Button, Container, Flex, Heading, Input, Text, VStack, useToast, Textarea } from "@chakra-ui/react";
 import { FaRobot, FaSignInAlt } from "react-icons/fa";
 
 const Index = () => {
@@ -33,6 +33,11 @@ const Index = () => {
 
   return (
     <Container maxW="container.md" py={10}>
+      <Box p={5} shadow="md" borderWidth="1px" borderRadius="md">
+        <Heading fontSize="xl">About Debre Berhan University</Heading>
+        <Text mt={4}>Debre Berhan University is one of the leading educational institutions in Ethiopia, known for its comprehensive programs and innovative research.</Text>
+        <Image src="/dbu-campus.jpg" alt="DBU Campus" mt={4} />
+      </Box>
       <VStack spacing={4} align="stretch">
         <Box p={5} shadow="md" borderWidth="1px" borderRadius="md">
           <Heading fontSize="xl">Debre Berhan University</Heading>
@@ -56,7 +61,7 @@ const Index = () => {
               Chatbot
             </Heading>
             <Text mt={2}>Ask me anything about Debre Berhan University!</Text>
-            {/* Placeholder for chatbot interaction */}
+            <Textarea placeholder="Ask me anything..." mt={4} />
           </Flex>
         )}
       </VStack>
