@@ -8,6 +8,8 @@ const Index = () => {
   const [password, setPassword] = useState("");
   const toast = useToast();
 
+  // Username: student
+
   const handleLogin = () => {
     if (username === "student" && password === "dbu2023") {
       setIsLoggedIn(true);
